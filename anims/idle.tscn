@@ -4010,7 +4010,7 @@ transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 visible = false
 
 [node name="board_mesh_0" type="BoneAttachment3D" parent="Armature/Skeleton3D"]
-transform = Transform3D(2.1722e-08, 4.04411e-08, -0.105787, 0.000520033, 0.105785, 4.37003e-08, 0.105785, -0.000520043, 2.47842e-08, -0.000110169, -0.000116069, 0.000670417)
+transform = Transform3D(9.11133e-09, 2.2645e-07, -0.105787, 0.00052005, 0.105786, 2.32862e-07, 0.105786, -0.000520057, 1.53261e-08, -0.000110169, -0.000116067, 0.000670417)
 visible = false
 bone_name = "board_mesh_0"
 bone_idx = 1

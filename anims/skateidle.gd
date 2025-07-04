@@ -7,10 +7,13 @@ var blend_amount := 0.0
  
 func _process(delta: float) -> void:
 	
-	if Input.is_action_just_pressed("push"):
+	if Input.is_action_pressed("push"):
 			blend_amount = move_toward(blend_amount, 1.0, blend_speed * delta)
 	else:
 			blend_amount = move_toward(blend_amount, 0.0, blend_speed * delta)
+			
+
+
 
 	blend_amount = clamp(blend_amount, 0.0, 1.0)
 

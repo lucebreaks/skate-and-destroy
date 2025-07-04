@@ -1,0 +1,554 @@
+# Blender MTL File: 'Brooklyn_Banks.blend'
+# Material Count: 48
+
+newmtl ACHWAY_GRAFFITI2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Downloads\\brooklyn_banks_graffiti2IMG-20250702-WA0018.jpg
+
+newmtl Material
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\asphalt_cracks_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\asphalt_cracks_alpha.png
+
+newmtl None
+Ns 500
+Ka 0.8 0.8 0.8
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl WAX1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\wallenberg_wax_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\wallenberg_wax_alpha.png
+
+newmtl arches_visref
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Downloads\\Brooklyn_Banks_Door_1024.jpg
+
+newmtl arches_visref.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Brooklyn_Banks_arches_HIRES.jpg
+
+newmtl archway_graffiti1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Downloads\\BROOKLYN_BANKS_GRAFFITI1IMG-20250702-WA0029.jpg
+
+newmtl asphalt_patch_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\asphalt_patch_pebbles_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\asphalt_patch_pebbles_alpha.png
+
+newmtl asphault_patch2_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\cement_patch_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\cement_patch_alpha.png
+
+newmtl banks_graffiti4
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Downloads\\IMG-20250702-WA0014.jpg
+
+newmtl bench_wood
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\Seamless\\wood\\wood_damaged.jpg
+
+newmtl benches
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Brooklyn_Banks_Jenkem_2023_SteveRod_9Stair.jpeg
+
+newmtl black_rails
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\Seamless\\painted\\paint_worn_black.jpg
+
+newmtl bondo1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\mod Zips\\downhill_city_jam-4vux\\subway_ground_stain1_alpha.png
+map_d C:\\Users\\fngl\\mod Zips\\downhill_city_jam-4vux\\subway_ground_stain1_alpha.png
+
+newmtl bridge_metal1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\Various\\rusty_metal1.jpg
+
+newmtl bridge_supports_concrete
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\TexturesCom collection\\TexturesCom_ConcreteMossy0090_7_seamless_M.png
+
+newmtl brooklyn_banks_graffiti2IMG-20250BANKS_GRAFFITI3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Downloads\\brooklyn_banks_graffiti3BROOKLYN_BANKS.jpg
+
+newmtl concrete_wall1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\TexturesCom collection\\TexturesCom_BrickLargeBlocks0026_1_seamless_S.jpg
+
+newmtl cracks_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\cracks_ground_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\cracks_ground_alpha.png
+
+newmtl drain1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\sewer1_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\sewer1_alpha.png
+
+newmtl drains1
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\mod Zips\\staples_center_v3-1l0d\\ground_drains.jpg
+
+newmtl electrical_panel1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\electrical_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\electrical_alpha.png
+
+newmtl granite_bricks1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\TexturesCom collection\\TexturesCom_BrickLargeBare0294_2_seamless_S.jpg
+
+newmtl granite_concrete1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\TexturesCom collection\\TexturesCom_ConcreteBare0321_1_seamless_L.jpg
+
+newmtl granmite_steps1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\TexturesCom collection\\TexturesCom_MarbleTiles0094_1_seamless_M.jpg
+
+newmtl green_fencing_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\tennis_green_fencing1_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\tennis_green_fencing1_alpha.png
+
+newmtl ground_brick1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\TexturesCom collection\\TexturesCom_BrickSmallBrown0478_2_seamless_S.jpg
+
+newmtl ground_cracks3_alpha
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\cement_cracks2_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\cement_cracks2_alpha.png
+
+newmtl ground_leaves1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\green_leaves_scattered_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\green_leaves_scattered_alpha.png
+
+newmtl ground_leaves_various_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\ground_leaves_atlas1_alphas.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\ground_leaves_atlas1_alphas.png
+
+newmtl ground_stain1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\grind_marks_top1_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\grind_marks_top1_alpha.png
+
+newmtl ground_stain2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\evergreen_stain_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\evergreen_stain_alpha.png
+
+newmtl metal1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\Seamless\\metal\\metal_gradient_steel.JPG
+
+newmtl metal_silver
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\Seamless\\metal\\metal_coping_scratched.jpg
+
+newmtl signs1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\sheets_etc\\signage\\signs_etc.jpg
+
+newmtl small_leaves
+Ns 180.000044
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\tiny_tree_leaves_alpha.png
+map_d C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\tiny_tree_leaves_alpha.png
+
+newmtl soil
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Textures Collection\\True Skate Original Textures\\lovepark_grass_etc1.png
+
+newmtl stain3_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\mod Zips\\staples_center_v3-1l0d\\bondo1_alpha.png
+map_d C:\\Users\\fngl\\mod Zips\\staples_center_v3-1l0d\\bondo1_alpha.png
+
+newmtl stickers_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\sheets_etc\\alphas\\skate_brands_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\sheets_etc\\alphas\\skate_brands_alpha.png
+
+newmtl tallgrass_alpha
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\tall_grass1_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\tall_grass1_alpha.png
+
+newmtl tree_bark1
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\bark09.png
+map_d C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\bark09.png
+
+newmtl tree_bark2
+Ns 180.000044
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump -bm 0.500000 C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\om_treeb01_01_nm.png
+map_Kd C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\om_treeb01_01_bm.png
+map_Ks C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\om_treeb01_01_mm.png
+map_d C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\om_treeb01_01_bm.png
+
+newmtl tree_leaves
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\TexturesCom_Branches0018_1_masked_M_alpha.png
+map_d C:\\Users\\fngl\\GAMEREADY_3D_ASSETS\\From SketchFab\\2_trees_large.fbm\\TexturesCom_Branches0018_1_masked_M_alpha.png
+
+newmtl wallride_marks_alpha
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\primitive_wallride_marks_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\primitive_wallride_marks_alpha.png
+
+newmtl water_cover_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\sewer2_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\sewer2_alpha.png
+
+newmtl wheelmarks1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\wheelmarks_single2_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\wheelmarks_single2_alpha.png
+
+newmtl wheelmarks2_alpha
+Ns 0.376549
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Textures Collection\\final alphas\\wheelmarks_single3_alpha.png
+map_d C:\\Users\\fngl\\Textures Collection\\final alphas\\wheelmarks_single3_alpha.png
+
+newmtl white_base
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Textures Collection\\Derfmode_texture_pack_1.0\\Seamless\\cement\\cement_plaster_semi_rough.png

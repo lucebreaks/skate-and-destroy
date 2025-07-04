@@ -21,12 +21,17 @@ radius = 0.0356445
 
 [node name="VehicleBody3D" type="VehicleBody3D" parent="."]
 disable_mode = 2
-collision_layer = 255
-collision_mask = 255
+collision_layer = 65535
+collision_mask = 65535
 center_of_mass_mode = 1
+angular_damp_mode = 1
+steering = -0.872665
 script = ExtResource("1_vo2sv")
-MAX_STEER = 0.1
-ENGINE_POWER = 64
+MAX_STEER = 0.13
+
+[node name="RayCast3D" type="RayCast3D" parent="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0698515, 0)
+collision_mask = 4351
 
 [node name="skatepush" parent="VehicleBody3D" instance=ExtResource("2_crirl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0068312, 0.0486291, 0.0351711)
@@ -62,17 +67,20 @@ wheel_friction_slip = 30.0
 
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.116838, 0.0467975, 0.3335)
+steering = -0.872665
 use_as_traction = true
 use_as_steering = true
 wheel_friction_slip = 30.0
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0962738, 0.0467975, 0.3335)
+steering = -0.872665
 use_as_traction = true
 use_as_steering = true
 wheel_friction_slip = 30.0
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="VehicleBody3D"]
+physics_interpolation_mode = 2
 transform = Transform3D(1.34309, 0, 0, 0, 3.08972, 0, 0, 0, 1, 0.0348247, 0.955228, 0.0692501)
 shape = SubResource("BoxShape3D_cg4j7")
 
