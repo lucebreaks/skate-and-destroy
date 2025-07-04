@@ -32,9 +32,6 @@ ENGINE_POWER = 64
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0068312, 0.0486291, 0.0351711)
 visible = false
 
-[node name="skateidle" parent="VehicleBody3D" instance=ExtResource("4_qi3ip")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00813016, 0.0468804, 0.0358833)
-
 [node name="Camera3D" type="Camera3D" parent="VehicleBody3D"]
 transform = Transform3D(-1, -9.21804e-09, 1.50714e-07, -1.07695e-08, 0.999947, -0.0102973, -1.50611e-07, -0.0102973, -0.999947, -0.69, 0.894928, -2.467)
 keep_aspect = 0
@@ -98,3 +95,6 @@ shape = SubResource("CylinderShape3D_qi3ip")
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="VehicleBody3D"]
 transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, -0.0100546, 0.0478633, -0.193666)
 shape = SubResource("CylinderShape3D_qi3ip")
+
+[node name="skateidle" parent="VehicleBody3D" instance=ExtResource("4_qi3ip")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00150807, 0.0441672, 0.0349935)

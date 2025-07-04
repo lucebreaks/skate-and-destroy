@@ -18,6 +18,7 @@ size = Vector3(28.9931, 1, 10.8708)
 [sub_resource type="BoxShape3D" id="BoxShape3D_37kl0"]
 
 [node name="Node3D" type="Node3D"]
+top_level = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.968235, -0.0837741, -0.235591, 0.250042, 0.324397, 0.912275, 0, -0.942204, 0.33504, -15.404, 11.7534, -0.0125484)
