@@ -35,7 +35,7 @@ volumetric_fog_length = 596.15
 [sub_resource type="Compositor" id="Compositor_crirl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cg4j7"]
-size = Vector3(0.265911, 0.0226123, 1.0008)
+size = Vector3(0.608678, 0.187087, 1.0008)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_cg4j7"]
 height = 0.157349
@@ -53,7 +53,6 @@ collision_layer = 255
 collision_mask = 255
 mass = 110.0
 center_of_mass_mode = 1
-contact_monitor = true
 max_contacts_reported = 4
 angular_damp_mode = 1
 steering = -0.872665
@@ -89,13 +88,13 @@ height = 1.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.036, 0)
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034626, 0.102791, 0.0254807)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00916696, 0.185029, 0.0254807)
 shape = SubResource("BoxShape3D_cg4j7")
 
 [node name="BR_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.994031, 0, 0, 0, 0.994031, 0, 0, 0, 0.994031, -0.198343, 0.0419326, -0.227919)
 use_as_traction = true
-wheel_roll_influence = 0.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.04
 wheel_rest_length = 0.05
 wheel_friction_slip = 3.0
@@ -107,7 +106,7 @@ damping_relaxation = 10.5
 [node name="BL_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.993931, -0.0140697, 0, 0.0140697, 0.993931, 0, 0, 0, 0.994031, 0.198808, 0.0419326, -0.227919)
 use_as_traction = true
-wheel_roll_influence = 0.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.04
 wheel_rest_length = 0.05
 wheel_friction_slip = 3.0
@@ -121,7 +120,7 @@ transform = Transform3D(0.994031, 0, 0, 0, 0.994031, 0, 0, 0, 0.994031, -0.19834
 steering = -0.872665
 use_as_traction = true
 use_as_steering = true
-wheel_roll_influence = 0.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.04
 wheel_rest_length = 0.05
 wheel_friction_slip = 3.0
@@ -135,7 +134,7 @@ transform = Transform3D(0.994031, 0, 0, 0, 0.994031, 0, 0, 0, 0.994031, 0.198808
 steering = -0.872665
 use_as_traction = true
 use_as_steering = true
-wheel_roll_influence = 0.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.04
 wheel_rest_length = 0.05
 wheel_friction_slip = 3.0
