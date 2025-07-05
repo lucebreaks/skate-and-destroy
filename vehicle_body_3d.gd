@@ -22,7 +22,7 @@ func _physics_process(delta):
 	engine_force = Input.get_axis("brake","push") * ENGINE_POWER
 	
 
-	if Input.is_action_pressed("ollie") && is_on_floor():
+	if Input.is_action_just_released("ollie") && is_on_floor():
 		apply_central_impulse(Vector3(0.0, jump_impulse, 0.0))
 
 

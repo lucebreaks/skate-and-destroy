@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 			blend_amount = move_toward(blend_amount, 0.0, blend_speed * delta)
 			
 
+			
 
 
 	blend_amount = clamp(blend_amount, 0.0, 1.0)

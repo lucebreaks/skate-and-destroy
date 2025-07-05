@@ -33,7 +33,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	var target: Vector3 = get_parent().global_transform.origin + Vector3(0,0.8,1)
-	var pos := global_transform.origin + Vector3(0,-1.5,0)
+	var pos := global_transform.origin + Vector3(0,0,0)
 
 	var from_target := pos - target
 
