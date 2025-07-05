@@ -1,22 +1,30 @@
 extends VehicleBody3D
 
 var skateidle
+@onready var br_wheel: VehicleWheel3D = $BR_Wheel
+@onready var bl_wheel: VehicleWheel3D = $BL_Wheel
+@onready var fr_wheel: VehicleWheel3D = $FR_Wheel
+@onready var fl_wheel: VehicleWheel3D = $FL_Wheel
 
 @export var MAX_STEER = 0.9
 @export var ENGINE_POWER = 80
-@export var jump_impulse = 20
+@export var jump_impulse = 500.0
+
+func is_on_floor():
+	print(br_wheel.is_in_contact())
+	print(bl_wheel.is_in_contact())
+	print(fl_wheel.is_in_contact())
+	print(fr_wheel.is_in_contact())
+	return (br_wheel.is_in_contact() && bl_wheel.is_in_contact() && fl_wheel.is_in_contact() && fr_wheel.is_in_contact())
 
 func _physics_process(delta):
 	steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
 	engine_force = Input.get_axis("brake","push") * ENGINE_POWER
 	
-	if Input.is_action_pressed("ollie") && is_on_floor():
-		apply_central_impulse(Vector3(0.0, 2.0, 0.0))
 
-func is_on_floor():
-	return true
-else:
-	return false
+	if Input.is_action_pressed("ollie") && is_on_floor():
+		apply_central_impulse(Vector3(0.0, jump_impulse, 0.0))
+
 
 func get_point_velocity(point: Vector3) -> Vector3:
 	return VehicleBody3D.linear_velocity * VehicleBody3D.angular_velocity.cross(point - VehicleBody3D.global_position)

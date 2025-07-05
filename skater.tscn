@@ -58,12 +58,12 @@ collision_layer = 65535
 collision_mask = 65535
 mass = 110.0
 center_of_mass_mode = 1
+contact_monitor = true
+max_contacts_reported = 4
 angular_damp_mode = 1
 steering = -0.872665
 script = ExtResource("1_vo2sv")
 MAX_STEER = 0.1
-ENGINE_POWER = null
-jump_impulse = null
 
 [node name="RayCast3D" type="RayCast3D" parent="VehicleBody3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.00122535, 0.0688193, -0.00168544)
@@ -81,6 +81,7 @@ fov = 90.0
 script = ExtResource("3_qi3ip")
 min_distance = 1.0
 max_distance = 2.0
+angle_v_adjust = 10.0
 height = 1.0
 
 [node name="skateidle" parent="VehicleBody3D" instance=ExtResource("4_qi3ip")]
