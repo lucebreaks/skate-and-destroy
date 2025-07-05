@@ -11,10 +11,6 @@ var skateidle
 @export var jump_impulse = 500.0
 
 func is_on_floor():
-	print(br_wheel.is_in_contact())
-	print(bl_wheel.is_in_contact())
-	print(fl_wheel.is_in_contact())
-	print(fr_wheel.is_in_contact())
 	return (br_wheel.is_in_contact() && bl_wheel.is_in_contact() && fl_wheel.is_in_contact() && fr_wheel.is_in_contact())
 
 func _physics_process(delta):

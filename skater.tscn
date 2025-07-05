@@ -53,6 +53,7 @@ collision_layer = 255
 collision_mask = 255
 mass = 110.0
 center_of_mass_mode = 1
+contact_monitor = true
 max_contacts_reported = 4
 angular_damp_mode = 1
 steering = -0.872665
@@ -88,7 +89,7 @@ height = 1.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.036, 0)
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00916696, 0.185029, 0.0254807)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00916696, 0.191234, 0.0254807)
 shape = SubResource("BoxShape3D_cg4j7")
 
 [node name="BR_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]

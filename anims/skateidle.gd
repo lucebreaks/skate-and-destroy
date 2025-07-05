@@ -1,12 +1,12 @@
 extends Node3D
 
-@onready var animation_tree: AnimationTree = $AnimationTree
+@onready var anim_statemachine: AnimationTree = $AnimStatemachine
+@onready var vehicle_body_3d: VehicleBody3D = $".."
 
 var blend_amount := 0.0
 @export	var blend_speed := 3.0
-var skate_amount := 0.0
-var jump := 0.0
-var olliejump := 0.0
+
+var floor_check = false;
 
 func _process(delta: float) -> void:
 	
@@ -16,18 +16,24 @@ func _process(delta: float) -> void:
 			blend_amount = move_toward(blend_amount, 0.0, blend_speed * delta)
 
 	if Input.is_action_pressed("ollie"):
-			skate_amount = move_toward(skate_amount, 1.0, blend_speed * delta)
-	else:
-			skate_amount = move_toward(skate_amount, 0.0, blend_speed * delta)
+		anim_statemachine["parameters/conditions/jump_start"] = true	
+		floor_check = false;
 	if Input.is_action_just_released("ollie"):
-			jump = move_toward(0, 1.0, blend_speed * delta)
-	else:
-			jump = move_toward(0, 0.0, blend_speed * delta)
-
+		anim_statemachine["parameters/conditions/jump_start"] = false
+		anim_statemachine["parameters/conditions/jump_release"] = true
+		print("here")
+		await get_tree().create_timer(1.0).timeout
+		floor_check = true;
+		if vehicle_body_3d.is_on_floor():
+			anim_statemachine["parameters/conditions/jump_release"] = false
+			anim_statemachine["parameters/conditions/jump_end"] = true
+			anim_statemachine["parameters/conditions/canSkate"] = true
+			print("onland")
+			await get_tree().create_timer(0.1).timeout
+			anim_statemachine["parameters/conditions/jump_end"] = false
+			print("reset")
+			
 	blend_amount = clamp(blend_amount, 0.0, 1.0)
-
-	animation_tree["parameters/skate/blend_amount"] = blend_amount
-	animation_tree["parameters/ollieblend/blend_amount"] = skate_amount
-	animation_tree.set("parameters/olliejump/active", false)
-	await(get_tree(), "physics_frame")
-	animation_tree.set("parameters/olliejump/active", true)
+	anim_statemachine["parameters/idle_Skate/blend_position"] = blend_amount
+	
+	
