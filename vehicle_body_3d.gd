@@ -37,7 +37,7 @@ func apply_z_force(collision_point):
 	
 	skateidle.apply_force(-dir * z_force, collision_point - skateidle.global_position)
 	
-	var point = Vector3(collision_point.x, collision_point.y + VehicleBody3D.steering, collision_point.z)
+	var _point = Vector3(collision_point.x, collision_point.y + VehicleBody3D.steering, collision_point.z)
 	
 	
 
