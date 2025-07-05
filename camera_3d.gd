@@ -8,3 +8,7 @@ extends Camera3D
 @onready var player_node : Node3D = $Player 
 # weight variable, controls the ratio of new and old camera position
 @export var camera_lag : float = 0.8 
+
+func _process(delta):
+  global_position = player_node.global_position
+  look_at(look_target.global_position)

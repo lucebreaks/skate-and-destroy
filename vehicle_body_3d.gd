@@ -9,6 +9,7 @@ var skateidle
 func _physics_process(delta):
 	steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
 	engine_force = Input.get_axis("brake","push") * ENGINE_POWER
+	
 
 	
 func get_point_velocity(point: Vector3) -> Vector3:
