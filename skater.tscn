@@ -1,12 +1,38 @@
-[gd_scene load_steps=7 format=3 uid="uid://30s8pl2o8nv1"]
+[gd_scene load_steps=12 format=3 uid="uid://30s8pl2o8nv1"]
 
 [ext_resource type="Script" uid="uid://bf08or5quojf" path="res://vehicle_body_3d.gd" id="1_vo2sv"]
+[ext_resource type="Shader" uid="uid://cbpp8ugtogdhp" path="res://skater.gdshader" id="2_cg4j7"]
 [ext_resource type="PackedScene" uid="uid://3hmsxreo2w75" path="res://anims/skateidle.tscn" id="4_qi3ip"]
-
-[sub_resource type="Environment" id="Environment_crirl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cg4j7"]
 size = Vector3(0.240723, 0.540527, 0.526157)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qi3ip"]
+resource_local_to_scene = true
+resource_name = "res://textures/new-york-city-panorama.jpg"
+shader = ExtResource("2_cg4j7")
+
+[sub_resource type="Sky" id="Sky_cg4j7"]
+resource_local_to_scene = true
+sky_material = SubResource("ShaderMaterial_qi3ip")
+
+[sub_resource type="Environment" id="Environment_crirl"]
+background_mode = 1
+background_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_cg4j7")
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 8.31
+reflected_light_source = 2
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+volumetric_fog_density = 0.0185
+volumetric_fog_length = 596.15
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_qi3ip"]
+
+[sub_resource type="Compositor" id="Compositor_crirl"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_cg4j7"]
 height = 0.157349
@@ -18,13 +44,13 @@ radius = 0.0356445
 
 [node name="Node3D" type="Node3D"]
 
-[node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0698515, 0)
-collision_mask = 4351
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 2
+transform = Transform3D(1.34309, 0, 0, 0, 3.08972, 0, 0, 0, 1, 0.03605, 0.95626, 0.0709355)
+shape = SubResource("BoxShape3D_cg4j7")
 
 [node name="VehicleBody3D" type="VehicleBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00122535, 0.00103225, 0.00168544)
-disable_mode = 2
 collision_layer = 65535
 collision_mask = 65535
 center_of_mass_mode = 1
@@ -32,11 +58,18 @@ angular_damp_mode = 1
 steering = -0.872665
 script = ExtResource("1_vo2sv")
 MAX_STEER = 0.13
+ENGINE_POWER = 100
+
+[node name="RayCast3D" type="RayCast3D" parent="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00122535, 0.0688193, -0.00168544)
+collision_mask = 4351
 
 [node name="Camera3D" type="Camera3D" parent="VehicleBody3D"]
 transform = Transform3D(-1, -9.21804e-09, 1.50714e-07, -1.07695e-08, 0.999947, -0.0102973, -1.50611e-07, -0.0102973, -0.999947, -0.69, 0.894928, -2.467)
 keep_aspect = 0
 environment = SubResource("Environment_crirl")
+attributes = SubResource("CameraAttributesPractical_qi3ip")
+compositor = SubResource("Compositor_crirl")
 current = true
 fov = 80.1
 
@@ -46,35 +79,46 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00150807, 0.0441672, 0.0349
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.121815, 0.0419288, -0.188426)
 use_as_traction = true
-wheel_radius = 0.955
 wheel_friction_slip = 30.0
+suspension_travel = 0.29
+suspension_stiffness = 2.0
+suspension_max_force = 800.0
+damping_compression = 1.335
+damping_relaxation = 1.095
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0912967, 0.0419288, -0.188426)
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0768183, 0.0419288, -0.188426)
 use_as_traction = true
-wheel_radius = 0.955
 wheel_friction_slip = 30.0
+suspension_travel = 0.29
+suspension_stiffness = 2.0
+suspension_max_force = 800.0
+damping_compression = 1.335
+damping_relaxation = 1.095
 
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.121815, 0.0419288, 0.329498)
 steering = -0.872665
 use_as_traction = true
 use_as_steering = true
-wheel_radius = 0.955
 wheel_friction_slip = 30.0
+suspension_travel = 0.29
+suspension_stiffness = 2.0
+suspension_max_force = 800.0
+damping_compression = 1.335
+damping_relaxation = 1.095
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0912967, 0.0419288, 0.329498)
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0768183, 0.0419288, 0.329498)
 steering = -0.872665
 use_as_traction = true
 use_as_steering = true
-wheel_radius = 0.955
 wheel_friction_slip = 30.0
-
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="VehicleBody3D"]
-physics_interpolation_mode = 2
-transform = Transform3D(1.34309, 0, 0, 0, 3.08972, 0, 0, 0, 1, 0.0348247, 0.955228, 0.0692501)
-shape = SubResource("BoxShape3D_cg4j7")
+suspension_travel = 0.29
+suspension_stiffness = 2.0
+suspension_max_force = 800.0
+damping_compression = 1.335
+damping_relaxation = 1.095
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="VehicleBody3D"]
 transform = Transform3D(0.983617, 0, 0, 0, 0.051873, 0, 0, 0, 1.24638, -0.00707416, 0.119646, 0.0692501)
@@ -85,7 +129,7 @@ transform = Transform3D(0.983617, 0, 0, 0, 0.0513649, 0.174022, 0, -0.00724264, 
 shape = SubResource("CylinderShape3D_cg4j7")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(0.983617, 0, 0, 0, 0.0513682, -0.173462, 0, 0.00721933, 1.23425, -0.007, 0.12, -0.255133)
+transform = Transform3D(0.983617, 0, 0, 0, 0.0513682, -0.173463, 0, 0.00721933, 1.23425, -0.007, 0.12, -0.255133)
 shape = SubResource("CylinderShape3D_cg4j7")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="VehicleBody3D"]
