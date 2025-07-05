@@ -17,6 +17,7 @@ height = 0.237122
 radius = 0.0356445
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0673864)
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0698515, 0)
@@ -44,19 +45,19 @@ fov = 80.1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00150807, 0.0441672, 0.0349935)
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.121815, 0.0664228, -0.123976)
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.121815, 0.0419288, -0.188426)
 use_as_traction = true
 wheel_radius = 0.955
 wheel_friction_slip = 30.0
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0912967, 0.0664228, -0.123976)
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0912967, 0.0419288, -0.188426)
 use_as_traction = true
 wheel_radius = 0.955
 wheel_friction_slip = 30.0
 
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.121815, 0.0664228, 0.401155)
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -0.121815, 0.0419288, 0.329498)
 steering = -0.872665
 use_as_traction = true
 use_as_steering = true
@@ -64,7 +65,7 @@ wheel_radius = 0.955
 wheel_friction_slip = 30.0
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0912967, 0.0664228, 0.401155)
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0.0912967, 0.0419288, 0.329498)
 steering = -0.872665
 use_as_traction = true
 use_as_steering = true
