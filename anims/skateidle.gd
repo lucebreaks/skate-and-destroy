@@ -6,6 +6,7 @@ var blend_amount := 0.0
 @export	var blend_speed := 3.0
 var skate_amount := 0.0
 var jump := 0.0
+var olliejump := 0.0
 
 func _process(delta: float) -> void:
 	
@@ -28,5 +29,5 @@ func _process(delta: float) -> void:
 	animation_tree["parameters/skate/blend_amount"] = blend_amount
 	animation_tree["parameters/ollieblend/blend_amount"] = skate_amount
 	animation_tree.set("parameters/olliejump/active", false)
-	await olliejump.play_turn().completed 
+	await(get_tree(), "physics_frame")
 	animation_tree.set("parameters/olliejump/active", true)
