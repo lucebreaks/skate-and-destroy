@@ -58,28 +58,28 @@ transform = Transform3D(0.983617, 0, 0, 0, 0.0513649, 0.174022, 0, -0.00724264, 
 visible = false
 shape = SubResource("CylinderShape3D_cg4j7")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.983617, 0, 0, 0, 0.0513682, -0.173463, 0, 0.00721933, 1.23425, -0.0334683, 0.117926, -0.289351)
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 0.961137, -6.63336, 0, 0.0114899, 0.961138, 7.53328e-05, 1.75301, -0.516908)
 visible = false
 shape = SubResource("CylinderShape3D_cg4j7")
 
-[node name="FR_Wheel_Collision" type="CollisionShape3D" parent="."]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, -0.132135, 0.0410948, 0.298535)
+[node name="FR_Wheel_Collision" type="CollisionShape3D" parent="CollisionShape3D/CollisionShape3D6"]
+transform = Transform3D(-4.08843e-08, -0.935323, 4.08843e-08, 2.46833, -8.75598e-07, -17.563, 0.730954, -2.74606e-08, 0.102729, -0.10031, 0.110552, 0.475664)
 visible = false
 shape = SubResource("CylinderShape3D_qi3ip")
 
-[node name="BR_Wheel_Collision" type="CollisionShape3D" parent="."]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, -0.133869, 0.038168, -0.227884)
+[node name="BR_Wheel_Collision" type="CollisionShape3D" parent="CollisionShape3D/CollisionShape3D6"]
+transform = Transform3D(-4.08843e-08, -0.935323, 4.08843e-08, 2.46833, -8.75598e-07, -17.563, 0.730954, -2.74606e-08, 0.102729, -0.102073, -1.35768, 0.0577425)
 visible = false
 shape = SubResource("CylinderShape3D_qi3ip")
 
-[node name="FL_Wheel_Collision" type="CollisionShape3D" parent="."]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, 0.0690254, 0.0410948, 0.298535)
+[node name="FL_Wheel_Collision" type="CollisionShape3D" parent="CollisionShape3D/CollisionShape3D6"]
+transform = Transform3D(-4.08843e-08, -0.935323, 4.08843e-08, 2.46833, -8.75598e-07, -17.563, 0.730954, -2.74606e-08, 0.102729, 0.104201, 0.110552, 0.475664)
 visible = false
 shape = SubResource("CylinderShape3D_qi3ip")
 
-[node name="BL_Wheel_Collision" type="CollisionShape3D" parent="."]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, 0.0672922, 0.038168, -0.227884)
+[node name="BL_Wheel_Collision" type="CollisionShape3D" parent="CollisionShape3D/CollisionShape3D6"]
+transform = Transform3D(-4.08843e-08, -0.935323, 4.08843e-08, 2.46833, -8.75598e-07, -17.563, 0.730954, -2.74606e-08, 0.102729, 0.102439, -1.35768, 0.0577425)
 visible = false
 shape = SubResource("CylinderShape3D_qi3ip")
 
@@ -102,9 +102,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
 shape = SubResource("CapsuleShape3D_cg4j7")
 disabled = true
 
-[node name="RayCast3D" type="RayCast3D" parent="VehicleBody3D"]
+[node name="boardcast" type="RayCast3D" parent="VehicleBody3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.00122535, 0.0688193, -0.00168544)
-collision_mask = 4351
+exclude_parent = false
+target_position = Vector3(0, -0.36, 0)
+collision_mask = 65535
+hit_from_inside = true
+collide_with_areas = true
 
 [node name="Camera3D" type="Camera3D" parent="VehicleBody3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.485395, 0.823419, -1.57949)
@@ -141,6 +145,10 @@ suspension_stiffness = 150.0
 damping_compression = 10.0
 damping_relaxation = 10.5
 
+[node name="BR_WheelCast" type="RayCast3D" parent="VehicleBody3D/BR_Wheel"]
+target_position = Vector3(0, -0.05, 0)
+collision_mask = 255
+
 [node name="BL_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.993931, -0.0140697, 0, 0.0140697, 0.993931, 0, 0, 0, 0.994031, 0.198808, 0.0419326, -0.227919)
 use_as_traction = true
@@ -152,6 +160,10 @@ suspension_travel = 0.3
 suspension_stiffness = 150.0
 damping_compression = 10.0
 damping_relaxation = 10.5
+
+[node name="BL_WheelCast" type="RayCast3D" parent="VehicleBody3D/BL_Wheel"]
+target_position = Vector3(0, -0.05, 0)
+collision_mask = 255
 
 [node name="FR_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.994031, 0, 0, 0, 0.994031, 0, 0, 0, 0.994031, -0.198343, 0.0419326, 0.295318)
@@ -167,6 +179,10 @@ suspension_stiffness = 150.0
 damping_compression = 10.0
 damping_relaxation = 10.5
 
+[node name="FR_WheelCast" type="RayCast3D" parent="VehicleBody3D/FR_Wheel"]
+target_position = Vector3(0, -0.05, 0)
+collision_mask = 255
+
 [node name="FL_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(0.994031, 0, 0, 0, 0.994031, 0, 0, 0, 0.994031, 0.198808, 0.0419326, 0.295318)
 steering = -0.872665
@@ -180,3 +196,7 @@ suspension_travel = 0.3
 suspension_stiffness = 150.0
 damping_compression = 10.0
 damping_relaxation = 10.5
+
+[node name="FL_WheelCast" type="RayCast3D" parent="VehicleBody3D/FL_Wheel"]
+target_position = Vector3(0, -0.05, 0)
+collision_mask = 255

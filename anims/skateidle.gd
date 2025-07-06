@@ -7,6 +7,7 @@ var blend_amount := 0.0
 var crouch_blend_amount := 0.0
 var ollieblend_amount := 0.0
 var landingblend_amount := 0.0
+var olliestart_amount := 0.0
 @export	var blend_speed := 3.0
 
 var floor_check = false;
@@ -29,6 +30,7 @@ func _process(delta: float) -> void:
 		anim_statemachine["parameters/conditions/jump_start"] = false
 		anim_statemachine["parameters/conditions/jump_release"] = true
 		print("here")
+			
 		await get_tree().create_timer(1.0).timeout
 		floor_check = true;
 		if vehicle_body_3d.is_on_floor():
