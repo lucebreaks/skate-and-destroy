@@ -5,9 +5,13 @@ extends Node3D
 
 var blend_amount := 0.0
 var crouch_blend_amount := 0.0
+var ollieblend_amount := 0.0
+var landingblend_amount := 0.0
 @export	var blend_speed := 3.0
 
 var floor_check = false;
+
+
 
 func _process(delta: float) -> void:
 	
@@ -21,12 +25,14 @@ func _process(delta: float) -> void:
 		anim_statemachine["parameters/conditions/jump_start"] = true	
 		floor_check = false;
 	if Input.is_action_just_released("ollie"):
+		ollieblend_amount = move_toward(ollieblend_amount, 1.0, blend_speed * delta)
 		anim_statemachine["parameters/conditions/jump_start"] = false
 		anim_statemachine["parameters/conditions/jump_release"] = true
 		print("here")
 		await get_tree().create_timer(1.0).timeout
 		floor_check = true;
 		if vehicle_body_3d.is_on_floor():
+			landingblend_amount = move_toward(landingblend_amount, 1.0, blend_speed * delta)
 			crouch_blend_amount = 0.0
 			anim_statemachine["parameters/conditions/jump_release"] = false
 			anim_statemachine["parameters/conditions/jump_end"] = true
@@ -36,6 +42,8 @@ func _process(delta: float) -> void:
 			anim_statemachine["parameters/conditions/jump_end"] = false
 			print("reset")
 			
+
+		
 	blend_amount = clamp(blend_amount, 0.0, 1.0)
 	anim_statemachine["parameters/idle_Skate/blend_position"] = blend_amount
 	anim_statemachine["parameters/crouch_blend/Crouch_anim/blend_amount"] = crouch_blend_amount

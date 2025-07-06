@@ -5,38 +5,6 @@
 [ext_resource type="Script" uid="uid://b4mnt786d0wmt" path="res://camerafollow.gd" id="3_qi3ip"]
 [ext_resource type="PackedScene" uid="uid://3hmsxreo2w75" path="res://anims/skateidle.tscn" id="4_qi3ip"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cg4j7"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qi3ip"]
-resource_local_to_scene = true
-resource_name = "res://textures/new-york-city-panorama.jpg"
-shader = ExtResource("2_cg4j7")
-
-[sub_resource type="Sky" id="Sky_cg4j7"]
-resource_local_to_scene = true
-sky_material = SubResource("ShaderMaterial_qi3ip")
-
-[sub_resource type="Environment" id="Environment_crirl"]
-background_mode = 1
-background_color = Color(1, 1, 1, 1)
-sky = SubResource("Sky_cg4j7")
-ambient_light_color = Color(1, 1, 1, 1)
-ambient_light_energy = 8.31
-reflected_light_source = 2
-ssr_enabled = true
-ssao_enabled = true
-ssil_enabled = true
-sdfgi_enabled = true
-volumetric_fog_density = 0.0185
-volumetric_fog_length = 596.15
-
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_qi3ip"]
-
-[sub_resource type="Compositor" id="Compositor_crirl"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_cg4j7"]
-size = Vector3(0.608678, 0.187087, 1.0008)
-
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_cg4j7"]
 height = 0.157349
 radius = 0.125488
@@ -45,7 +13,75 @@ radius = 0.125488
 height = 0.0389599
 radius = 0.0429688
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cg4j7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qi3ip"]
+resource_local_to_scene = true
+resource_name = "res://textures/new-york-city-panorama.jpg"
+shader = ExtResource("2_cg4j7")
+
+[sub_resource type="Sky" id="Sky_qi3ip"]
+resource_local_to_scene = true
+sky_material = SubResource("ShaderMaterial_qi3ip")
+
+[sub_resource type="Environment" id="Environment_crirl"]
+background_mode = 1
+background_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_qi3ip")
+ambient_light_source = 2
+ambient_light_color = Color(0.581607, 0.633564, 0.640602, 1)
+ambient_light_energy = 2.51
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 0.48
+sdfgi_min_cell_size = 13.8
+sdfgi_cascade0_distance = 883.2
+sdfgi_max_distance = 14131.2
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0185
+volumetric_fog_anisotropy = -0.42
+volumetric_fog_length = 151.39
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_qi3ip"]
+
+[sub_resource type="Compositor" id="Compositor_crirl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cg4j7"]
+size = Vector3(0.608678, 0.187087, 1.0008)
+
 [node name="Node3D" type="Node3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.983617, 0, 0, 0, 0.0513649, 0.174022, 0, -0.00724264, 1.23417, -0.0335424, 0.117836, 0.361298)
+visible = false
+shape = SubResource("CylinderShape3D_cg4j7")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.983617, 0, 0, 0, 0.0513682, -0.173463, 0, 0.00721933, 1.23425, -0.0334683, 0.117926, -0.289351)
+visible = false
+shape = SubResource("CylinderShape3D_cg4j7")
+
+[node name="FR_Wheel_Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, -0.132135, 0.0410948, 0.298535)
+visible = false
+shape = SubResource("CylinderShape3D_qi3ip")
+
+[node name="BR_Wheel_Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, -0.133869, 0.038168, -0.227884)
+visible = false
+shape = SubResource("CylinderShape3D_qi3ip")
+
+[node name="FL_Wheel_Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, 0.0690254, 0.0410948, 0.298535)
+visible = false
+shape = SubResource("CylinderShape3D_qi3ip")
+
+[node name="BL_Wheel_Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, 0.0672922, 0.038168, -0.227884)
+visible = false
+shape = SubResource("CylinderShape3D_qi3ip")
 
 [node name="VehicleBody3D" type="VehicleBody3D" parent="."]
 disable_mode = 1
@@ -90,6 +126,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.036, 0)
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="VehicleBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00916696, 0.191234, 0.0254807)
+visible = false
 shape = SubResource("BoxShape3D_cg4j7")
 
 [node name="BR_Wheel" type="VehicleWheel3D" parent="VehicleBody3D"]
@@ -143,33 +180,3 @@ suspension_travel = 0.3
 suspension_stiffness = 150.0
 damping_compression = 10.0
 damping_relaxation = 10.5
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(0.983617, 0, 0, 0, 0.0513649, 0.174022, 0, -0.00724264, 1.23417, -0.0335424, 0.117836, 0.361298)
-shape = SubResource("CylinderShape3D_cg4j7")
-disabled = true
-
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(0.983617, 0, 0, 0, 0.0513682, -0.173463, 0, 0.00721933, 1.23425, -0.0334683, 0.117926, -0.289351)
-shape = SubResource("CylinderShape3D_cg4j7")
-disabled = true
-
-[node name="FR_Wheel_Collision" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, -0.132135, 0.0410948, 0.298535)
-shape = SubResource("CylinderShape3D_qi3ip")
-disabled = true
-
-[node name="BR_Wheel_Collision" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, -0.133869, 0.038168, -0.227884)
-shape = SubResource("CylinderShape3D_qi3ip")
-disabled = true
-
-[node name="FL_Wheel_Collision" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, 0.0690254, 0.0410948, 0.298535)
-shape = SubResource("CylinderShape3D_qi3ip")
-disabled = true
-
-[node name="BL_Wheel_Collision" type="CollisionShape3D" parent="VehicleBody3D"]
-transform = Transform3D(-4.02145e-08, -0.92, 4.02145e-08, 0, -4.02145e-08, -0.92, 0.92, -4.02145e-08, 1.75783e-15, 0.0672922, 0.038168, -0.227884)
-shape = SubResource("CylinderShape3D_qi3ip")
-disabled = true

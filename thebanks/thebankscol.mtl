@@ -1,0 +1,427 @@
+# Blender MTL File: 'None'
+# Material Count: 38
+
+newmtl ACHWAY_GRAFFITI2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Downloads\\brooklyn_banks_graffiti2IMG-20250702-WA0018.jpg
+
+newmtl AI_tent_material
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Originals\\tent_AI_texture.fbm\\AI_tent_sheet.jpg
+
+newmtl Material.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Downloads\\GAMEREADY_3D_ASSETS\\quixel\\props\\electrical_box_worn_gray.fbm\\electrical_box_bake1.png
+
+newmtl None
+Ns 500.000001
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl PLYWOOD1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_PlywoodOld0001_S.jpg
+
+newmtl Props1_u2NWBuild9_1_24
+Ns 0.877502
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd SketchFab\\dumpster_debris1.fbm\\Image_78.jpg
+
+newmtl Props1_u2NWBuild9_1_37
+Ns 0.843772
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd SketchFab\\city_PROPS2.fbm\\Image_41.jpg
+
+newmtl Props1_u2NWBuild9_1_39
+Ns 0.843772
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd SketchFab\\city_PROPS.fbm\\Image_81.jpg
+
+newmtl Props1_u2NWBuild9_1_46
+Ns 0.877502
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd SketchFab\\city_PROPS.fbm\\Image_63.jpg
+
+newmtl Props1_u2NWBuild9_1_6
+Ns 0.854995
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd SketchFab\\city_PROPS.fbm\\Image_66.jpg
+
+newmtl WAX1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd alphas\\wallenberg_wax_alpha.png
+map_d alphas\\wallenberg_wax_alpha.png
+
+newmtl arches_visref
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Downloads\\Brooklyn_Banks_Door_1024.jpg
+
+newmtl arches_visref.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Downloads\\Brooklyn_Banks_arches_HIRES.jpg
+
+newmtl archway_graffiti1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Downloads\\BROOKLYN_BANKS_GRAFFITI1IMG-20250702-WA0029.jpg
+
+newmtl banks_graffiti4
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Downloads\\IMG-20250702-WA0014.jpg
+
+newmtl bench_wood
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Collection\\Derfmode_texture_pack_1.0\\Seamless\\wood\\wood_damaged.jpg
+
+newmtl benches
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\fngl\\Downloads\\Brooklyn_Banks_Jenkem_2023_SteveRod_9Stair.jpeg
+
+newmtl black_rails
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Collection\\Derfmode_texture_pack_1.0\\Seamless\\painted\\paint_worn_black.jpg
+
+newmtl bridge_metal1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Collection\\Various\\rusty_metal1.jpg
+
+newmtl bridge_supports_concrete
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_ConcreteMossy0090_7_seamless_M.png
+
+newmtl brooklyn_banks_graffiti2IMG-20250BANKS_GRAFFITI3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\fngl\\Downloads\\brooklyn_banks_graffiti3BROOKLYN_BANKS.jpg
+
+newmtl chain_link1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Collection\\Derfmode_texture_pack_1.0\\sheets_etc\\alphas\\Black_grate_alpha_256.png
+map_d Collection\\Derfmode_texture_pack_1.0\\sheets_etc\\alphas\\Black_grate_alpha_256.png
+
+newmtl concrete_wall1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_BrickLargeBlocks0026_1_seamless_S.jpg
+
+newmtl drains1
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Zips\\staples_center_v3-1l0d\\ground_drains.jpg
+
+newmtl electrical_panel1_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd alphas\\electrical_alpha.png
+map_d alphas\\electrical_alpha.png
+
+newmtl granite_bricks1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_BrickLargeBare0294_2_seamless_S.jpg
+
+newmtl granite_concrete1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_ConcreteBare0321_1_seamless_L.jpg
+
+newmtl granmite_steps1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_MarbleTiles0094_1_seamless_M.jpg
+
+newmtl green_fencing_alpha
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd alphas\\tennis_green_fencing1_alpha.png
+map_d alphas\\tennis_green_fencing1_alpha.png
+
+newmtl ground_brick1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_BrickSmallBrown0478_2_seamless_S.jpg
+
+newmtl metal1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Collection\\Derfmode_texture_pack_1.0\\Seamless\\metal\\metal_gradient_steel.JPG
+
+newmtl metal_silver
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Collection\\Derfmode_texture_pack_1.0\\Seamless\\metal\\metal_coping_scratched.jpg
+
+newmtl plywood2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd collection\\TexturesCom_PlywoodOld0023_1_S.jpg
+
+newmtl signs1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Collection\\Derfmode_texture_pack_1.0\\sheets_etc\\signage\\signs_etc.jpg
+
+newmtl soil
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Textures\\lovepark_grass_etc1.png
+
+newmtl tree_bark1
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd SketchFab\\2_trees_large.fbm\\bark09.png
+map_d SketchFab\\2_trees_large.fbm\\bark09.png
+
+newmtl tree_bark2
+Ns 180.000044
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump -bm 0.500000 SketchFab\\2_trees_large.fbm\\om_treeb01_01_nm.png
+map_Kd SketchFab\\2_trees_large.fbm\\om_treeb01_01_bm.png
+map_Ks SketchFab\\2_trees_large.fbm\\om_treeb01_01_mm.png
+map_d SketchFab\\2_trees_large.fbm\\om_treeb01_01_bm.png
+
+newmtl white_base
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Collection\\Derfmode_texture_pack_1.0\\Seamless\\cement\\cement_plaster_semi_rough.png

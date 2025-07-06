@@ -12,6 +12,9 @@ var skateidle
 
 func is_on_floor():
 	return (br_wheel.is_in_contact() && bl_wheel.is_in_contact() && fl_wheel.is_in_contact() && fr_wheel.is_in_contact())
+	
+func landing():
+	return (br_wheel.is_in_contact() or bl_wheel.is_in_contact() or fl_wheel.is_in_contact() or fr_wheel.is_in_contact())
 
 func _physics_process(delta):
 	steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
@@ -20,6 +23,8 @@ func _physics_process(delta):
 
 	if Input.is_action_just_released("ollie") && is_on_floor():
 		apply_central_impulse(Vector3(0.0, jump_impulse, 0.0))
+		
+
 
 
 func get_point_velocity(point: Vector3) -> Vector3:
