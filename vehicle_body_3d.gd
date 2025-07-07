@@ -5,12 +5,13 @@ var skateidle
 @onready var bl_wheel: VehicleWheel3D = $BL_Wheel
 @onready var fr_wheel: VehicleWheel3D = $FR_Wheel
 @onready var fl_wheel: VehicleWheel3D = $FL_Wheel
-@onready var floorcol: CollisionObject3D = $floorcol3d
 @onready var br_wheel_cast: RayCast3D = $BR_Wheel/BR_WheelCast
 @onready var bl_wheel_cast: RayCast3D = $BL_Wheel/BL_WheelCast
 @onready var fr_wheel_cast: RayCast3D = $FR_Wheel/FR_WheelCast
 @onready var fl_wheel_cast: RayCast3D = $FL_Wheel/FL_WheelCast
 @onready var boardcast: RayCast3D = $boardcast
+@onready var boardcast_2: RayCast3D = $boardcast2
+@onready var boardcast_3: RayCast3D = $boardcast3
 
 
 
@@ -19,7 +20,8 @@ var skateidle
 @export var jump_impulse = 500.0
 
 func is_on_floor():
-	return (boardcast.is_colliding() or br_wheel_cast.is_colliding() or bl_wheel_cast.is_colliding() or fl_wheel_cast.is_colliding() or fr_wheel_cast.is_colliding())
+	return (br_wheel_cast.is_colliding() or bl_wheel_cast.is_colliding() or fl_wheel_cast.is_colliding() or fr_wheel_cast.is_colliding() or boardcast.is_colliding() or boardcast_2.is_colliding() or boardcast_3.is_colliding())
+
 	
 func landing():
 	return (br_wheel.is_in_contact() or bl_wheel.is_in_contact() or fl_wheel.is_in_contact() or fr_wheel.is_in_contact())
