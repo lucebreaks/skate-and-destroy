@@ -17,7 +17,7 @@ var skateidle
 
 @export var MAX_STEER = 0.9
 @export var ENGINE_POWER = 80
-@export var jump_impulse = 500.0
+@export var jump_impulse : float = 500.0
 
 func is_on_floor():
 	return (br_wheel_cast.is_colliding() or bl_wheel_cast.is_colliding() or fl_wheel_cast.is_colliding() or fr_wheel_cast.is_colliding() or boardcast.is_colliding() or boardcast_2.is_colliding() or boardcast_3.is_colliding())
