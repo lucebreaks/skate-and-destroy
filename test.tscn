@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://dyyl6iniug2hg"]
+[gd_scene load_steps=17 format=3 uid="uid://dyyl6iniug2hg"]
 
 [ext_resource type="PackedScene" uid="uid://30s8pl2o8nv1" path="res://skater.tscn" id="1_37kl0"]
+[ext_resource type="Texture2D" uid="uid://cvj4meuyjeo2t" path="res://anims/TexturesCom_BrickLargePainted0040_20_seamless_S.jpg" id="1_ykrsh"]
 [ext_resource type="PackedScene" uid="uid://ddhmkxw1cmy06" path="res://billboard.glb" id="4_ppyta"]
 [ext_resource type="PackedScene" uid="uid://w3eubpgll0qo" path="res://thebanks/Brooklyn_Banks.glb" id="5_ykrsh"]
 [ext_resource type="ArrayMesh" uid="uid://dxcebu26n12bd" path="res://thebanks/thebankscol.obj" id="6_g14j6"]
@@ -17,6 +18,9 @@ vertex_color_is_srgb = true
 size = Vector3(28.9931, 1, 10.8708)
 
 [sub_resource type="BoxMesh" id="BoxMesh_37kl0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g14j6"]
+albedo_texture = ExtResource("1_ykrsh")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_37kl0"]
 
@@ -102,9 +106,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6705, 0, -0.0267331)
 shape = SubResource("BoxShape3D_ppyta")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.58, 0, 0, 0, 0.661009, 0, 0, 0, 10.195, -0.175893, 0.511941, -0.252163)
+transform = Transform3D(-0.013788, 0, 10.1946, 0, 0.661009, 0, -1.57994, 0, -0.0889674, 14.242, -0.0911396, -12.2221)
 layers = 991
 mesh = SubResource("BoxMesh_37kl0")
+surface_material_override/0 = SubResource("StandardMaterial3D_g14j6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D5"]
 

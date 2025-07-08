@@ -8,13 +8,16 @@ var crouch_blend_amount := 0.0
 var ollieblend_amount := 0.0
 var landingblend_amount := 0.0
 var olliestart_amount := 0.0
+var manualstart_amount := 0.0
+var manualend_amount := 0.0
+var manualblend_amount := 0.0
 @export	var blend_speed := 3.0
 
 var floor_check = false;
 
 
-
 func _process(delta: float) -> void:
+
 	
 	if Input.is_action_pressed("push"):
 			blend_amount = move_toward(blend_amount, 1.0, blend_speed * delta)
@@ -29,7 +32,8 @@ func _process(delta: float) -> void:
 		ollieblend_amount = move_toward(ollieblend_amount, 1.0, blend_speed * delta)
 		anim_statemachine["parameters/conditions/jump_start"] = false
 		anim_statemachine["parameters/conditions/jump_release"] = true
-		print("here")
+
+		
 			
 		await get_tree().create_timer(1.0).timeout
 		floor_check = true;
@@ -39,13 +43,13 @@ func _process(delta: float) -> void:
 			anim_statemachine["parameters/conditions/jump_release"] = false
 			anim_statemachine["parameters/conditions/jump_end"] = true
 			anim_statemachine["parameters/conditions/canSkate"] = true
-			print("onland")
-			await get_tree().create_timer(0.1).timeout
-			anim_statemachine["parameters/conditions/jump_end"] = false
-			print("reset")
-			
 
-		
+			await get_tree().create_timer(0.25).timeout
+			anim_statemachine["parameters/conditions/jump_end"] = false
+
+			
+	
+
 	blend_amount = clamp(blend_amount, 0.0, 1.0)
 	anim_statemachine["parameters/idle_Skate/blend_position"] = blend_amount
 	anim_statemachine["parameters/crouch_blend/Crouch_anim/blend_amount"] = crouch_blend_amount
