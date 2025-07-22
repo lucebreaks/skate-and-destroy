@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://drv2v71d6ao13"
+path.s3tc="res://.godot/imported/cosmopolis_Cement.jpg-14a7617a83f727b54bef77aa42e1fd04.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "ee4c0d42c0028dd1f191a441f4aed7bb"
+}
+
+[deps]
+
+source_file="res://derfmode cosmopolis/cosmopolis_Cement.jpg"
+dest_files=["res://.godot/imported/cosmopolis_Cement.jpg-14a7617a83f727b54bef77aa42e1fd04.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

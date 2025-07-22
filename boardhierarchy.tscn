@@ -1,0 +1,67 @@
+[gd_scene load_steps=15 format=3 uid="uid://b26nx4iv6ybgh"]
+
+[ext_resource type="ArrayMesh" uid="uid://2e6488mrdcup" path="res://boardparts/board.obj" id="1_e0i8v"]
+[ext_resource type="Texture2D" uid="uid://ctryhvfnfe044" path="res://board textures/blankboard.png" id="2_jg5cm"]
+[ext_resource type="ArrayMesh" uid="uid://lfa26qkpeypn" path="res://boardparts/bushings.obj" id="3_toor2"]
+[ext_resource type="ArrayMesh" uid="uid://p8nn3418atql" path="res://boardparts/trucks1.obj" id="4_pu50x"]
+[ext_resource type="ArrayMesh" uid="uid://gs2e3f0netl1" path="res://boardparts/wheel1.obj" id="5_3m6s8"]
+[ext_resource type="ArrayMesh" uid="uid://dtl6r8l86uqvf" path="res://boardparts/wheel2.obj" id="6_j5r6d"]
+[ext_resource type="ArrayMesh" uid="uid://fgkfw412i8h4" path="res://boardparts/trucks2.obj" id="7_8yqq7"]
+[ext_resource type="ArrayMesh" uid="uid://c8mtkbvgytqm7" path="res://boardparts/wheel3.obj" id="8_vl4no"]
+[ext_resource type="ArrayMesh" uid="uid://dq4nfq8hpvtiq" path="res://boardparts/wheel4.obj" id="9_r04ft"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ehlyl"]
+albedo_texture = ExtResource("2_jg5cm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2c0p3"]
+albedo_texture = ExtResource("2_jg5cm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y85q4"]
+albedo_texture = ExtResource("2_jg5cm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nhl5i"]
+albedo_texture = ExtResource("2_jg5cm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6dyuo"]
+albedo_texture = ExtResource("2_jg5cm")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="board" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_e0i8v")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_ehlyl")
+
+[node name="bushings" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_toor2")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_2c0p3")
+
+[node name="trucks1" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_pu50x")
+surface_material_override/0 = SubResource("StandardMaterial3D_y85q4")
+
+[node name="wheell1" type="MeshInstance3D" parent="trucks1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602937, -0.180373, -0.261649)
+mesh = ExtResource("5_3m6s8")
+surface_material_override/0 = SubResource("StandardMaterial3D_nhl5i")
+
+[node name="wheelr1" type="MeshInstance3D" parent="trucks1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602937, -0.180373, 0.262)
+mesh = ExtResource("6_j5r6d")
+surface_material_override/0 = SubResource("StandardMaterial3D_nhl5i")
+
+[node name="trucks2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("7_8yqq7")
+surface_material_override/0 = SubResource("StandardMaterial3D_y85q4")
+
+[node name="wheell2" type="MeshInstance3D" parent="trucks2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.552583, -0.18, -0.262)
+mesh = ExtResource("8_vl4no")
+surface_material_override/0 = SubResource("StandardMaterial3D_6dyuo")
+
+[node name="wheelr2" type="MeshInstance3D" parent="trucks2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.552583, -0.18, 0.262)
+mesh = ExtResource("9_r04ft")
+skeleton = NodePath("../wheell2")
+surface_material_override/0 = SubResource("StandardMaterial3D_6dyuo")

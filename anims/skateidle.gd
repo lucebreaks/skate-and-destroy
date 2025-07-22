@@ -8,12 +8,20 @@ var crouch_blend_amount := 0.0
 var ollieblend_amount := 0.0
 var landingblend_amount := 0.0
 var olliestart_amount := 0.0
-var manualstart_amount := 0.0
-var manualend_amount := 0.0
+var manual_start_amount := 0.0
+var manual_end_amount := 0.0
 var manualblend_amount := 0.0
 @export	var blend_speed := 3.0
+@onready var br_wheel: VehicleWheel3D = $BR_Wheel
+@onready var bl_wheel: VehicleWheel3D = $BL_Wheel
+@onready var fr_wheel: VehicleWheel3D = $FR_Wheel
+@onready var fl_wheel: VehicleWheel3D = $FL_Wheel
 
-var floor_check = false;
+var floor_check : bool = false;
+
+
+func is_on_floor():
+	return (br_wheel.is_in_contact() && bl_wheel.is_in_contact() && fl_wheel.is_in_contact() && fr_wheel.is_in_contact())
 
 
 func _process(delta: float) -> void:
@@ -38,17 +46,36 @@ func _process(delta: float) -> void:
 		await get_tree().create_timer(1.0).timeout
 		floor_check = true;
 		if vehicle_body_3d.is_on_floor():
-			landingblend_amount = move_toward(landingblend_amount, 1.0, blend_speed * delta)
+			landingblend_amount = move_toward(landingblend_amount, 0.5, blend_speed * delta)
 			crouch_blend_amount = 0.0
 			anim_statemachine["parameters/conditions/jump_release"] = false
 			anim_statemachine["parameters/conditions/jump_end"] = true
 			anim_statemachine["parameters/conditions/canSkate"] = true
 
-			await get_tree().create_timer(0.25).timeout
-			anim_statemachine["parameters/conditions/jump_end"] = false
+			await get_tree().create_timer(0.01).timeout
+			if vehicle_body_3d.is_on_floor():
+				anim_statemachine["parameters/conditions/jump_end"] = false
 
 			
-	
+	if Input.is_action_pressed("manual"):
+		manual_start_amount = move_toward(manual_start_amount, 1.0, blend_speed * delta)
+		anim_statemachine["parameters/conditions/manual_start"] = true	
+		floor_check = false;
+	if Input.is_action_just_released("manual"):
+		manual_end_amount = move_toward(manual_end_amount, 1.0, blend_speed * delta)
+		anim_statemachine["parameters/conditions/manual_start"] = false
+		anim_statemachine["parameters/conditions/manual_end"] = true
+
+		
+			
+		await get_tree().create_timer(1.0).timeout
+		floor_check = true;
+		if vehicle_body_3d.is_on_floor():
+			manualblend_amount = move_toward(manualblend_amount, 0.5, blend_speed * delta)
+			crouch_blend_amount = 0.0
+			anim_statemachine["parameters/conditions/manual_end"] = true
+			anim_statemachine["parameters/conditions/canSkate"] = true
+
 
 	blend_amount = clamp(blend_amount, 0.0, 1.0)
 	anim_statemachine["parameters/idle_Skate/blend_position"] = blend_amount

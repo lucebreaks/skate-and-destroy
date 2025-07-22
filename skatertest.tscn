@@ -1,0 +1,87 @@
+[gd_scene load_steps=18 format=3 uid="uid://ch7rh1ua5euuw"]
+
+[ext_resource type="Script" uid="uid://bydomq4auy32q" path="res://skater.gd" id="1_fcq8k"]
+[ext_resource type="ArrayMesh" uid="uid://2e6488mrdcup" path="res://boardparts/board.obj" id="2_geraw"]
+[ext_resource type="Texture2D" uid="uid://ctryhvfnfe044" path="res://board textures/blankboard.png" id="3_w2nft"]
+[ext_resource type="ArrayMesh" uid="uid://lfa26qkpeypn" path="res://boardparts/bushings.obj" id="4_on1sb"]
+[ext_resource type="ArrayMesh" uid="uid://p8nn3418atql" path="res://boardparts/trucks1.obj" id="5_vowjv"]
+[ext_resource type="ArrayMesh" uid="uid://gs2e3f0netl1" path="res://boardparts/wheel1.obj" id="6_ygjqe"]
+[ext_resource type="ArrayMesh" uid="uid://dtl6r8l86uqvf" path="res://boardparts/wheel2.obj" id="7_qe5mt"]
+[ext_resource type="ArrayMesh" uid="uid://fgkfw412i8h4" path="res://boardparts/trucks2.obj" id="8_n5i6i"]
+[ext_resource type="ArrayMesh" uid="uid://c8mtkbvgytqm7" path="res://boardparts/wheel3.obj" id="9_jcxex"]
+[ext_resource type="ArrayMesh" uid="uid://dq4nfq8hpvtiq" path="res://boardparts/wheel4.obj" id="10_epncw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b3nyy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jqpal"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tnfv1"]
+albedo_texture = ExtResource("3_w2nft")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c25ah"]
+albedo_texture = ExtResource("3_w2nft")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fflk8"]
+albedo_texture = ExtResource("3_w2nft")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yo6v3"]
+albedo_texture = ExtResource("3_w2nft")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_quuju"]
+albedo_texture = ExtResource("3_w2nft")
+
+[node name="skater" type="Node3D"]
+script = ExtResource("1_fcq8k")
+
+[node name="ball" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.317256, 0)
+physics_material_override = SubResource("PhysicsMaterial_b3nyy")
+gravity_scale = 10.0
+linear_damp = 2.0
+angular_damp = 5.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ball"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.173826, 0)
+shape = SubResource("SphereShape3D_jqpal")
+
+[node name="skateboard" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.266561, 0)
+
+[node name="board" type="MeshInstance3D" parent="skateboard"]
+mesh = ExtResource("2_geraw")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_tnfv1")
+
+[node name="bushings" type="MeshInstance3D" parent="skateboard"]
+mesh = ExtResource("4_on1sb")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_c25ah")
+
+[node name="trucks1" type="MeshInstance3D" parent="skateboard"]
+mesh = ExtResource("5_vowjv")
+surface_material_override/0 = SubResource("StandardMaterial3D_fflk8")
+
+[node name="wheell1" type="MeshInstance3D" parent="skateboard/trucks1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602937, -0.180373, -0.261649)
+mesh = ExtResource("6_ygjqe")
+surface_material_override/0 = SubResource("StandardMaterial3D_yo6v3")
+
+[node name="wheelr1" type="MeshInstance3D" parent="skateboard/trucks1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602937, -0.180373, 0.262)
+mesh = ExtResource("7_qe5mt")
+surface_material_override/0 = SubResource("StandardMaterial3D_yo6v3")
+
+[node name="trucks2" type="MeshInstance3D" parent="skateboard"]
+mesh = ExtResource("8_n5i6i")
+surface_material_override/0 = SubResource("StandardMaterial3D_fflk8")
+
+[node name="wheell2" type="MeshInstance3D" parent="skateboard/trucks2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.552583, -0.18, -0.262)
+mesh = ExtResource("9_jcxex")
+surface_material_override/0 = SubResource("StandardMaterial3D_quuju")
+
+[node name="wheelr2" type="MeshInstance3D" parent="skateboard/trucks2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.552583, -0.18, 0.262)
+mesh = ExtResource("10_epncw")
+skeleton = NodePath("../wheell2")
+surface_material_override/0 = SubResource("StandardMaterial3D_quuju")

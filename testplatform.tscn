@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://3d2qr2n3grw7"]
+
+[ext_resource type="PackedScene" uid="uid://30s8pl2o8nv1" path="res://skater.tscn" id="1_quiq7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fqbox"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_is512"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_quiq7"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fqbox"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_quiq7"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.431373, 0.713726, 0.431373, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0)
+layers = 31
+mesh = SubResource("BoxMesh_fqbox")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_is512")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 99.836, 0, 0)
+layers = 31
+mesh = SubResource("BoxMesh_fqbox")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_is512")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.82206e-07, 0, 14.1184, 0, 0.326789, 0, -8.74385, 0, -6.17136e-07, 0.46554, 0.660389, 33.8189)
+mesh = SubResource("BoxMesh_quiq7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_fqbox")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.68026e-07, 0, 19.0842, 0, 0.326789, 0, -3.84399, 0, -8.34196e-07, 8.75885, 0.660389, -34.7159)
+mesh = SubResource("BoxMesh_quiq7")
+surface_material_override/0 = SubResource("StandardMaterial3D_quiq7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_fqbox")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(0.482106, 0, 0, 0, 0.999999, 0, 0, 0, 0.594905, 0.258747, 0.98465, 0.202671)
+mesh = SubResource("BoxMesh_quiq7")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4/MeshInstance3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/MeshInstance3D5/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_fqbox")
+
+[node name="Node3D" parent="." instance=ExtResource("1_quiq7")]
+transform = Transform3D(0.456228, 0, 0.889863, 0, 1, 0, -0.889863, 0, 0.456228, -35.0393, 0.556629, 0.354762)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.828911, 0.559381, 0, -0.559381, 0.828911, 0, 0, 0)
+shadow_enabled = true
