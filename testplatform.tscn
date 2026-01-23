@@ -53,7 +53,6 @@ mesh = SubResource("BoxMesh_quiq7")
 surface_material_override/0 = SubResource("StandardMaterial3D_quiq7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_fqbox")

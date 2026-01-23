@@ -1,6 +1,6 @@
 # Blender 4.4.0
 # www.blender.org
-mtllib board.mtl
+mtllib boardlone.mtl
 o BOARD
 v -0.624420 0.006078 0.251593
 v -0.745583 -0.012084 0.250439
